@@ -1,0 +1,251 @@
+@font-face {
+    font-family: mrgvlovani;
+    src: url(../fonts/bpg_mrgvlovani_2010.ttf);
+}
+@font-face {
+    font-family: mrgvlovanicaps;
+    src: url(../fonts/bpg_mrgvlovani_caps_2010.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: mrgvlovani;
+    text-align: justify;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background-color: #f8f8ff;
+}
+h1{
+    width: 150px;
+    height: 30px;
+    background-image: url(../img/bluelogo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -9999999px;
+}
+h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header{
+    /* background-color: #ffd506; */
+    padding: 30px;
+    font-family: mrgvlovanicaps;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 10;
+
+}
+.notindex{
+    background-color: #f8f8ff;
+}
+.noindexmain{
+    padding-top: 150px;
+}
+header ul{
+    width: 600px;
+}
+header ul a{
+    padding: 40px 10px;
+    font-size: 14px;
+    color: #0400b2;
+    font-weight: bold;
+}
+.socialmedia{
+    width: 200px;
+}
+.socialmedia a{
+    padding: 10px;
+    color: #0400b2;
+    font-weight: bold;
+}
+.socialmedia a:hover{
+    color: #ffd506;
+}
+.darklight{
+    font-size: 30px;
+    cursor: pointer;
+    color: #0400b2;
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.owl-theme .owl-nav{
+    margin: 0;
+    position: absolute;
+    top:40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    font-size: 80px!important;
+    color: #0400b2!important;
+    transition: 0.5s;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffd506!important;
+   
+}
+.reviews{
+    width: 100%;
+    padding: 50px;
+    background-color: #ffd506;
+    font-family: mrgvlovani;
+}
+.owl-review-carousel{
+    width: 90%;
+    margin: 0 auto;
+}
+.reviewitem{
+    /* width: 400px; */
+    padding: 0 40px;
+    text-align: justify;
+    color: #0400b2;
+}
+.reviews h2{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #010034;
+}
+.reviewitem p{
+    color: #010034;
+}
+.reviewitem .designline{
+    width: 50%;
+    height: 4px;
+    background-color: #0400b2;
+    margin: 50px 0 10px 0;
+}
+.courses{
+    width: 100%;
+    padding: 200px;
+    align-items: flex-start;
+}
+.coursestext{
+    width: 400px;
+    text-align: justify;
+}
+.coursestext h2{
+    color: #010034;
+}
+.coursestext p{
+    color: #0400b2;
+    margin: 30px 0;
+    line-height: 30px;
+}
+.aboutme{
+    display: block;
+    padding: 20px;
+    border: 1px solid #010034;
+    color: #010034;
+    width: 200px;
+    text-align: center;
+}
+.aboutme:hover{
+    cursor: pointer;
+    background-color: #0400b2;
+    color: #ffd506;
+}
+.courseslist{
+    width: 800px;
+    flex-wrap: wrap;
+}
+.courseitem{
+    width: 300px;
+    margin-bottom: 80px;
+    color:#010034
+}
+.courseimage{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px 0;
+} 
+.courseimage img{
+    width: 100%;
+}
+.courseitem p{
+    font-size: 12px;
+    color: #0400b2;
+}
+.btstrp{
+    background-color: #ffd506;
+}
+.noindexmain{
+    padding: 200px;
+}
+
+.greetingtext{
+    width: 300px;
+    color: #010034;
+}
+.greetingtext p{
+    font-size: 14px;
+    color: #0400b2;
+    margin-top: 50px;
+    line-height: 30px;
+}
+.greetingvideo{
+    width: 500px;
+    height:500px;
+    overflow: hidden;
+}
+.greetingvideo video{
+    width: 100%;
+    margin-top: -100px;
+}
+.about{
+    align-items: flex-start;
+    margin: 100px auto;
+}
+.about h2{
+    color: #0400b2;
+}
+.biotext{
+    width: 500px;
+}
+.biotext p{
+    margin-bottom: 20px;
+}
+.education{
+    width: 500px;
+    color: #010034;
+}
+.educationitem{
+    margin-bottom: 50px;
+}
+.educatoinline{
+    width: 70%;
+    height: 4px;
+    background-color: #0400b2;
+    margin-bottom: 10px;
+}
+.educationitem p{
+    margin-top: 10px;
+}
+.educationitem h3{
+    color: #0400b2;
+}
