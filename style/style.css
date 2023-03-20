@@ -21,9 +21,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+:root{
+    --grey: #f8f8ff;
+    --maintxtcolor: #010034;
+    --lightblue: #0400b2;
+    --lighterblue: #5f5dff;
+    --greylike: #f1f1f1;
+    --yellow: #ffd506;
+} 
+
+
+/* :root{
+    --grey: #010034;
+    --maintxtcolor: #f8f8ff;
+    --lightblue: #f1f1f1;
+    --lighterblue: #5f5dff;
+    --greylike: #010044;
+    --yellow: #ffd506;
+} */
 body{
-    background-color: #f8f8ff;
+    background-color: var(--grey);
 }
 h1{
     width: 150px;
@@ -38,8 +57,11 @@ h1 a{
     width: 100%;
     height: 100%;
 }
+p, button, a, h2, h3, h4{
+    color: var(--maintxtcolor);
+}
 header{
-    /* background-color: #ffd506; */
+    /* background-color: var(--yellow); */
     padding: 30px;
     font-family: mrgvlovanicaps;
     width: 100%;
@@ -49,10 +71,11 @@ header{
 
 }
 .notindex{
-    background-color: #f8f8ff;
+    background-color: var(--grey);
 }
-.noindexmain{
+.aboutmain{
     padding-top: 150px;
+
 }
 header ul{
     width: 600px;
@@ -60,7 +83,7 @@ header ul{
 header ul a{
     padding: 40px 10px;
     font-size: 14px;
-    color: #0400b2;
+    color: var(--lightblue);
     font-weight: bold;
 }
 .socialmedia{
@@ -68,16 +91,16 @@ header ul a{
 }
 .socialmedia a{
     padding: 10px;
-    color: #0400b2;
+    color: var(--lightblue);
     font-weight: bold;
 }
 .socialmedia a:hover{
-    color: #ffd506;
+    color: var(--yellow);
 }
 .darklight{
     font-size: 30px;
     cursor: pointer;
-    color: #0400b2;
+    color: var(--lightblue);
 }
 
 .slider{
@@ -101,18 +124,18 @@ header ul a{
 }
 .owl-theme .owl-nav [class*=owl-]{
     font-size: 80px!important;
-    color: #0400b2!important;
+    color: var(--lightblue)!important;
     transition: 0.5s;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
     background-color: rgba(0, 0, 0, 0);
-    color: #ffd506!important;
+    color: var(--yellow)!important;
    
 }
 .reviews{
     width: 100%;
     padding: 50px;
-    background-color: #ffd506;
+    background-color: var(--yellow);
     font-family: mrgvlovani;
 }
 .owl-review-carousel{
@@ -123,20 +146,20 @@ header ul a{
     /* width: 400px; */
     padding: 0 40px;
     text-align: justify;
-    color: #0400b2;
+    color: var(--lightblue);
 }
 .reviews h2{
     text-align: center;
     margin-bottom: 60px;
-    color: #010034;
+    color: var(--maintxtcolor);
 }
 .reviewitem p{
-    color: #010034;
+    color: var(--maintxtcolor);
 }
 .reviewitem .designline{
     width: 50%;
     height: 4px;
-    background-color: #0400b2;
+    background-color: var(--lightblue);
     margin: 50px 0 10px 0;
 }
 .courses{
@@ -149,25 +172,26 @@ header ul a{
     text-align: justify;
 }
 .coursestext h2{
-    color: #010034;
+    color: var(--maintxtcolor);
 }
 .coursestext p{
-    color: #0400b2;
+    color: var(--lightblue);
     margin: 30px 0;
     line-height: 30px;
 }
 .aboutme{
     display: block;
     padding: 20px;
-    border: 1px solid #010034;
-    color: #010034;
+    border: 1px solid var(--maintxtcolor);
+    color: var(--maintxtcolor);
     width: 200px;
     text-align: center;
+    transition: 1s;
 }
 .aboutme:hover{
     cursor: pointer;
-    background-color: #0400b2;
-    color: #ffd506;
+    background-color: var(--lightblue);
+    color: var(--yellow);
 }
 .courseslist{
     width: 800px;
@@ -189,22 +213,25 @@ header ul a{
 }
 .courseitem p{
     font-size: 12px;
-    color: #0400b2;
+    color: var(--lightblue);
 }
 .btstrp{
-    background-color: #ffd506;
+    background-color: var(--yellow);
 }
 .noindexmain{
     padding: 200px;
 }
-
+.greeting, .bio, .about, .freelectures{
+    padding: 0 200px;
+}
 .greetingtext{
     width: 300px;
-    color: #010034;
+    color: var(--maintxtcolor);
+
 }
 .greetingtext p{
     font-size: 14px;
-    color: #0400b2;
+    color: var(--lightblue);
     margin-top: 50px;
     line-height: 30px;
 }
@@ -222,7 +249,7 @@ header ul a{
     margin: 100px auto;
 }
 .about h2{
-    color: #0400b2;
+    color: var(--lightblue);
 }
 .biotext{
     width: 500px;
@@ -230,9 +257,21 @@ header ul a{
 .biotext p{
     margin-bottom: 20px;
 }
+.biotext ul li{
+    margin: 20px 0;
+    font-weight: bold;
+    color: var(--maintxtcolor);
+}
+.biotext ul li a{
+    display: block;
+    font-weight: 400;
+    color: var(--lightblue);
+    text-decoration: underline;
+    
+}
 .education{
     width: 500px;
-    color: #010034;
+    color: var(--maintxtcolor);
 }
 .educationitem{
     margin-bottom: 50px;
@@ -240,12 +279,198 @@ header ul a{
 .educatoinline{
     width: 70%;
     height: 4px;
-    background-color: #0400b2;
+    background-color: var(--lightblue);
     margin-bottom: 10px;
 }
 .educationitem p{
     margin-top: 10px;
 }
 .educationitem h3{
-    color: #0400b2;
+    color: var(--lightblue);
+}
+.freelectures p{
+    margin-bottom: 30px;
+    color: var(--maintxtcolor);
+}
+.freelectures p:nth-child(2){
+    font-size: 18px;
+}
+.freelectures p:nth-child(2) span{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--maintxtcolor);
+    text-shadow: 0 0 5px var(--yellow);
+}
+.aboutregisteroncourse{
+    background-color: var(--yellow);
+    padding: 100px 200px 50px 200px;
+    margin: 100px 0;
+}
+.aboutregisteroncourse p:nth-child(1){
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.aboutregisteroncourse p:nth-child(2) a{
+    display: block;
+    padding: 14px;
+    width: 200px;
+    text-align: center;
+    margin: 50px auto;
+    border: 1px solid #010034;
+    color: var(--maintxtcolor);
+    transition: 1s;
+}
+.aboutregisteroncourse p:nth-child(2) a:hover{
+    background-color: var(--maintxtcolor);
+    color: var(--yellow);
+    cursor: pointer;
+}
+.coursespage, .students{
+    padding: 100px 0 200px 0;
+    margin: 100px 0;
+    background-color: var(--yellow);
+    position: relative;
+}
+.students{
+    padding: 100px 0 100px 0;
+}
+.coursepageh2{
+    color: var(--maintxtcolor);
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+.coursepagep{
+    color: var(--lightblue);
+    text-align: center;
+}
+.coursespagelist{
+    width: 70%;
+    padding-bottom: 50px;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    margin-left: -35%;
+    background-color: var(--greylike);
+
+}
+
+
+/* Style the tab */
+.tab{
+    width: 80%;
+    overflow: hidden;
+    border-bottom: 1px solid var(--maintxtcolor);
+    margin: 0 auto;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: var(--yellow);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: var(--yellow);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+  }
+
+.tabcont{
+    display: block;
+}
+.coursecontainer{
+    width: 80%;
+    margin: 30px auto;
+    border: 1px solid var(--maintxtcolor);
+    align-items: flex-start;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 1s;
+}
+.studprojcontainer{
+    width: 45%;
+}
+.coursecontainer:hover{
+    box-shadow: 0 0 5px var(--maintxtcolor);
+}
+
+.coursecontainerimage{
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+.coursecontainerimage img{
+    width: 100%;
+}
+.coursetext{
+    width: 45%;
+}
+.coursecontainer h2{
+    font-size: 16px;
+    margin: 20px 20px 10px 0;
+    text-align: left;
+    color: var(--maintxtcolor);
+    
+}
+.coursecontainer h2 a{
+    color: var(--maintxtcolor);
+}
+.coursecontainer h2 a:hover{
+    text-shadow: 2px 2px var(--yellow);
+    text-decoration: underline;
+}
+.coursecontainer .price{
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.surati{
+    transition: 1s;
+}
+.coursecontainer:hover .surati{
+    transform: scale(1.1);
+}
+.register a{
+    display: block;
+    width: 90%;
+    padding: 14px;
+    border: 1px solid var(--maintxtcolor);
+    text-align: center;
+    color: var(--maintxtcolor);
+    border-radius: 10px;
+    transition: 1s;
+}
+.register a:hover{
+    background-color: var(--yellow);
+}
+.tabcontent .groups{
+    width: 80%;
+    margin: 80px auto 10px auto;
+}
+.masterclass .price{
+    font-weight: bolder;
+    margin:30px 0;
+    letter-spacing: 5px;
+}
+.studentsprojects{
+    flex-wrap: wrap;
 }
